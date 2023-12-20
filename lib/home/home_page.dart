@@ -10,16 +10,18 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.purple,
         title: Center(child: const Text("Despesas Pessoais")),
       ),
-      body: Column(
-        children: [
-          Container(
-            child: Card(
-              child: Text("Gráficos"),
-              elevation: 5,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              child: Card(
+                child: Text("Gráficos"),
+                elevation: 5,
+              ),
             ),
-          ),
-          TransactionUser()
-        ],
+            TransactionUser()
+          ],
+        ),
       ),
     );
   }
